@@ -19,4 +19,4 @@ jobs:
           workflow: test.yml
           # Optional, uploaded artifact name,
           # will delete all artifacts if not specified
-          name: cypres
+          name: cypresartifact
