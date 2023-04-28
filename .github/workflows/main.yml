@@ -12,4 +12,4 @@ jobs:
         with:
           onlyPrefix: art
           token: ${{ secrets.ARTIFACT_CLEANUP_GITHUB_TOKEN }}
-          expire-in: 2days # Setting this to 0 will delete all artifacts
+          expire-in: 2 minutes # Setting this to 0 will delete all artifacts
