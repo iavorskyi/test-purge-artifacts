@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: kolpav/purge-artifacts-action@v1
         with:
-          onlyPrefix: art
+          onlyPrefix: cypres
           token: ${{ secrets.ARTIFACT_CLEANUP_GITHUB_TOKEN }}
           expire-in: 2 minutes # Setting this to 0 will delete all artifacts
