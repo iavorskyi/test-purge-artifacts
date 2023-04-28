@@ -15,4 +15,4 @@ jobs:
           GITHUB_TOKEN: ${{secrets.ARTIFACT_CLEANUP_GITHUB_TOKEN}}
           log_level: 'error'
           min_bytes: '0'
-          pattern: 'art'
+          pattern: 'cypres'
