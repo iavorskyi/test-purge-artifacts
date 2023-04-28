@@ -1,0 +1,15 @@
+name: "Delete old artifacts"
+on:
+  schedule:
+    - cron: "0 4 * * *" # every night at 4 am UTC
+  workflow_dispatch:
+
+jobs:
+  delete-artifacts:
+    runs-on: ubuntu
+    steps:
+      - uses: kolpav/purge-artifacts-action@v1
+        with:
+          onlyPrefix: cypress-
+          token: ${{ secrets.ARTIFACT_CLEANUP_GITHUB_TOKEN }}
+          expire-in: 2days # Setting this to 0 will delete all artifacts
