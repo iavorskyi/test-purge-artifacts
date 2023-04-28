@@ -20,3 +20,4 @@ jobs:
           # Optional, uploaded artifact name,
           # will delete all artifacts if not specified
           # name: cypresartifact
+          workflow_conclusion: failure
