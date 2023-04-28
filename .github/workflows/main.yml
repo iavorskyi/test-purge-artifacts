@@ -12,7 +12,7 @@ jobs:
       - name: Weekly Artifact Cleanup
         uses: jimschubert/delete-artifacts-action@v1
         with:
-          token: ${{secrets.ARTIFACT_CLEANUP_GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.ARTIFACT_CLEANUP_GITHUB_TOKEN}}
           log_level: 'error'
           min_bytes: '0'
           pattern: 'art'
