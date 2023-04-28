@@ -16,7 +16,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
-          name: artifact
+          name: cypresartifact
           path: date.txt
   build:
     runs-on: ubuntu-latest
