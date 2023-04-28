@@ -13,6 +13,6 @@ jobs:
         uses: jimschubert/delete-artifacts-action@v1
         with:
           GITHUB_TOKEN: ${{secrets.ARTIFACT_CLEANUP_GITHUB_TOKEN}}
-          log_level: 'error'
+          log_level: 'debug'
           min_bytes: '0'
           pattern: 'cypres'
